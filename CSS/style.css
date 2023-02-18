@@ -5,9 +5,201 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 button {
  cursor: pointer;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* header */
+
+header{
+  width: 100%;
+  height: 10vh;
+  padding: 10px 30px;
+  background-color: rgb(172, 160, 184);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 11;
+}
+header .logo{
+  padding: 5px;
+}
+header .logo h2{
+  font-weight: 600;
+}
+header a{
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hamburger{
+  display: none;
+}
+.fa-1x{
+  transition: all .3s ease-in-out;
+  transform: scale(1.5);
+}
+.fa-1x:hover{
+  transform: scale(1.3);
+}
+@media screen and (max-width: 700px){
+  .hamburger{
+    display: block;
+  }
+  nav{
+    background-color: rgb(230, 213, 213);
+    padding:  30px;
+    height: 90vh;
+    position: absolute;
+    top:60px;
+    left: 0px;
+    width: 30%;
+    transition: all .3s ease-in-out;
+  }
+  .show{
+    left: -300px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 60px;
+    margin-top: 50px;
+    
+    
+  }
+}
+.changeColor{
+  background-color: black;
+  color: white;
+}
+/* header end */
+
+main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 10vh; /* to move main from top coz of display fixed*/
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 168, 216);
+  /* background: url('../IMAGES/banner-bg.png')no-repeat center center/cover; */
+}
+main .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .left{
+  width: 40%;
+  font-size: 24px;
+  position: relative;
+  bottom: 50px;
+}
+main .left h1{
+  font-weight: 600;
+}
+main .right{
+  width: 60%;
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .right img{
+  position: absolute;
+  right: 150px;
+  bottom: 180px;
+  width: 300px;
+  border-radius: 50%;
+}
+.download-btn{
+  padding: 10px 30px;
+  background-color: rgb(150, 94, 207);
+  outline: none;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+button a{
+  color: white;
+  font-weight: 500;
+}
+.bottom-shape{
+  width: 100%;
+  height: fit-content;
+  /* background-color: aqua; */
+  position: absolute;
+  bottom: -5px;
+  transition: all .3s ease-in-out;
+}
+.bottom-shape img{
+  width: 100%;
+  height: 100%;
+}
+section{
+  position: relative;
+}
+.skills-section{
+  width: 100%;
+  height: 50vh;
+  background-color: coral;
+}
+.section-heading{
+  text-align: center;
+  padding: 20px 40px;
+  text-transform: uppercase;
+}
+.skills-section .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  width: 100%;
+}
+.skills-slider-container{
+  width: 200%;
+  height: 30vh;
+  padding: 10px 0;
+  background-color: burlywood;
+  /* overflow: hidden; */
+  display: flex;
+}
+
+.round{
+  border-radius: 50%;
+}
+.slide{
+  width: 200%;
+  height: 100%;
+  background: center center/cover;
+}
+.slide img{
+  width: 10%;
+  height: 100%;
+}
+
+@keyframes slide{
+  
+ 
 }
