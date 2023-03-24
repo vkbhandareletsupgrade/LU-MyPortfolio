@@ -158,48 +158,79 @@ button a{
 section{
   position: relative;
 }
-.skills-section{
+
+/* skills-section */
+
+.slider-section{
   width: 100%;
-  height: 50vh;
-  background-color: coral;
+  height: 20vh;
+  background-color: brown;
 }
-.section-heading{
-  text-align: center;
-  padding: 20px 40px;
-  text-transform: uppercase;
+
+.slide-container{
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  overflow: hidden;
 }
-.skills-section .container{
+.slides{
+  width: 300%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  width: 100%;
+  animation: slide 16s infinite;
 }
-.skills-slider-container{
-  width: 200%;
-  height: 30vh;
-  padding: 10px 0;
-  background-color: burlywood;
-  /* overflow: hidden; */
-  display: flex;
+.slides img{
+  width: 120px;
+  height: 15vh;
 }
-
-.round{
-  border-radius: 50%;
+.img1{
+  width: 150px!important;
+  height: 15vh;
 }
-.slide{
-  width: 200%;
-  height: 100%;
-  background: center center/cover;
-}
-.slide img{
-  width: 10%;
-  height: 100%;
-}
-
 @keyframes slide{
   
+20%{
+  margin-left: -40%;
+}
+40%{
+  margin-left: -80%;
+}
+60%{
+  margin-left: -120%;
+}
+80%{
+  margin-left: -160%;
+}
+100%{
+  margin-left: -200%;
+}
  
+}
+
+.about-section{
+  width: 100%;
+  height: 100vh;
+  background-color: darkgray;
+}
+.section-header{
+  width: 100%;
+  height: 10vh;
+  background-color: blueviolet;
+  display: grid;
+  place-items: center;
+}
+.section-content{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.section-content .left img{
+  width:100%;
+  border-radius: 50%;
 }

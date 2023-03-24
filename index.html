@@ -38,7 +38,7 @@
         <div class="container">
             <div class="left">
                 <h1>
-                    Hi <br> I <br> Am <br> Vaibhav
+                    I <br> Am <br> Vaibhav
                 </h1>
                 <button class="btn download-btn"><a href="./A4.pdf" download="./A4.pdf">
                         <i class="fa fa-download"></i>&nbsp;Download Resume</a></button>
@@ -53,44 +53,48 @@
             <img src="./IMAGES/shape-bg.png" alt="bottom-shape-not-loaded">
         </div>
     </main>
-    <section class="skills-section">
-        <div class="container">
-            <div class="section-heading">
-                <h2>
-                    Skills
-                </h2>
-            </div>
-            <div class="skills-slider-container">
-                <div class="slide">
-                    <img src="./IMAGES/html-5.png" alt="fdgdfgdfgdfg">
+    <section class="slider-section">
+            <div class="slide-container">
+                
+                <div class="slides">
+                    <img src="./IMAGES/html-5.png" class="img1" alt="htm5">
+                    <img src="./IMAGES/newcss.png" class="img1" alt="css">
+                    <img src="./IMAGES/3.png" alt="js">
+                    <img src="./IMAGES/4.png" alt="react">
+                    <img src="./IMAGES/5.png" alt="sass">
+                    <img src="./IMAGES/6.png" alt="figma">
+                    <img src="./IMAGES/7.jpg" class="round" alt="git">
+                    <img src="./IMAGES/bs.png" class="round" alt="bs">
+                    <img src="./IMAGES/html-5.png" alt="htm5">
+                    <img src="./IMAGES/newcss.png" class="img1" alt="css">
+                    <img src="./IMAGES/3.png" alt="js">
+                    <img src="./IMAGES/4.png" alt="react">
                 </div>
-                <div class="slide">
-                    <img src="./IMAGES/newcss.png" alt="">
                 </div>
-                <div class="slide">
-                    <img src="./IMAGES/3.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMAGES/4.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMAGES/5.png" alt="">
-                </div>
-            </div>
+            </div>  
         </div>
-        </div>
+    </section>
 
+    <!-- skills-section -->
+    <section class="about-section">
+          <div class="section-header">
+            <h2>About Me</h2>
+          </div>
+          <div class="section-content">
+            <div class="left">
+                <img src="./IMAGES/skill-gif.gif" alt="gif">
+            </div>
+            <div class="right">
+                
+            </div>
+          </div>
     </section>
 
     <script>
-        document.querySelector('.hamburger').
-            addEventListener('click', () =>
-                document.querySelector('nav').classList.toggle('show'));
+       
 
 
-        window.addEventListener('scroll', () => {
-            document.querySelector('header').classList.toggle('changeColor', window.scrollY > 10)
-        })
+        
     </script>
 
     <script src="./fontAwesome/js/all.min.js"></script>
